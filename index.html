@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>snake</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="main_container" align="center">
+<div id="game_container" align="center">
+<table>
+<tr>
+<td>
+	<div style="width:150px;height:auto;">
+    Use your mouse and click the control keys to control the snake.
+    </div>
+</td>
+<td>
+	<div id="main_frame" align="center">
+    	<script src="script.js"></script>
+       <button class="keybtn" id="strbtn" type="button" onClick="str()">Start</button>
+    	<button class="keybtn" id="psebtn" type="button" onClick="pse()">Pause</button>
+    </div>
+    
+</td>
+<td>
+	<div id="control_frame">
+    <table>
+    	<tr>
+        	<td></td>
+           <td><button class="ctlbtn" id="upbtn" type="button" onClick="snake.chndir('up')">↑</button></td>
+           <td></td>
+    	</tr>
+    	<tr>
+        	<td><button class="ctlbtn" id="lfbtn" type="button" onClick="snake.chndir('left')">←</button></td>
+           <td><button class="ctlbtn" id="dnbtn" type="button" onClick="snake.chndir('down')">↓</button></td>
+           <td><button class="ctlbtn" id="rtbtn" type="button" onClick="snake.chndir('right')">→</button></td>
+    	</tr>
+    </table>
+    </div>
+</td>
+<td>
+	<div id="output">
+    	<table>
+       	<tr>
+        	<td id="highest">Highest: 0</td>
+       </tr>
+       <tr>
+       		<td id="score">Score: 0</td>
+       </tr>
+       </table>
+	</div>
+</td>
+</tr>
+</table>
+</div>
+	
+    
+</div>
+
+
+
+
+</body>
+</html>
